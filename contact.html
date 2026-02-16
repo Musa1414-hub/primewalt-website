@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PRIME WALT NIG LTD</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="PRIME WALT NIG LTD Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">PRIME WALT NIG LTD</span>
+                    <span class="logo-subtitle">Excellence in Every Sector</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="mobile-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us today.</p>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span class="current">Contact</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Contact Section -->
+    <section class="contact-modern-section">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">We hope to hear from you. Contact us for more information about our services and opportunities.</p>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="contact-cards-wrapper">
+                <div class="contact-card fade-in">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+2349013697163">+234 901 369 7163</a></p>
+                        <p><a href="tel:+2348106116814">+234 810 611 6814</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <h3>Email</h3>
+                        <p><a href="mailto:primewaltnigltd@gmail.com">primewaltnigltd@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <h3>Head Office</h3>
+                        <p>No 61 Maganda Kano, Nigeria</p>
+                    </div>
+                </div>
+
+                <div class="contact-card fade-in">
+                    <div class="contact-card-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-card-content">
+                        <h3>Business Hours</h3>
+                        <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                        <p>Sat: 9:00 AM - 2:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Contact Container -->
+            <div class="contact-container">
+                <!-- Left Side - Contact Info -->
+                <div class="contact-info-side">
+                    <div class="contact-info-header">
+                        <h2>Let's Connect</h2>
+                        <p>Have a question or want to work with us? Fill out the form or reach out directly. We're here to help!</p>
+                    </div>
+
+                    <!-- Office Locations -->
+                    <div class="office-locations">
+                        <div class="office-item">
+                            <div class="office-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="office-details">
+                                <h4>Head Office - Kano</h4>
+                                <p>No 61 Maganda Kano, Nigeria</p>
+                            </div>
+                        </div>
+
+                        <div class="office-item">
+                            <div class="office-icon">
+                                <i class="fas fa-map-pin"></i>
+                            </div>
+                            <div class="office-details">
+                                <h4>Abuja Office</h4>
+                                <p>Nasir El Rufai Cres, Teema Court Guzape Abuja</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="quick-contact">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Contact Form -->
+                <div class="contact-form-side">
+                    <div class="form-container">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" onsubmit="submitForm(event)">
+                            <!-- Name Row -->
+                            <div class="form-row two-col">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span class="required">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                                    <i class="fas fa-user form-icon"></i>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span class="required">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                                    <i class="fas fa-user form-icon"></i>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+234 XXX XXX XXXX">
+                                <i class="fas fa-phone form-icon"></i>
+                            </div>
+                            
+                            <!-- Subject -->
+                            <div class="form-group">
+                                <label for="subject">Subject <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="services">Our Services</option>
+                                    <option value="projects">Projects</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="careers">Career Opportunities</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <i class="fas fa-chevron-down select-icon"></i>
+                            </div>
+                            
+                            <!-- Message -->
+                            <div class="form-group">
+                                <label for="message">Message <span class="required">*</span></label>
+                                <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                                <i class="fas fa-comment form-icon"></i>
+                            </div>
+                            
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Location</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="map-wrapper">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900!2d8.5921!3d12.0021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDAwJzAwLjAiTiA4wrAzNCcwMC4wIkU!5e0!3m2!1sen!2sng!4v1600000000000!5m2!1sen!2sng" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Other Ways to Reach Us</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="quick-links-grid">
+                <div class="quick-link-card fade-in">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Business Inquiries</h3>
+                    <p>For business partnerships and commercial opportunities</p>
+                    <a href="mailto:primewaltnigltd@gmail.com" class="quick-link-btn">
+                        Email Us <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="quick-link-card fade-in">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h3>Project Inquiries</h3>
+                    <p>Information about projects and contracting opportunities</p>
+                    <a href="mailto:primewaltnigltd@gmail.com" class="quick-link-btn">
+                        Email Us <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="quick-link-card fade-in">
+                    <div class="quick-link-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Career Opportunities</h3>
+                    <p>Join our team and grow with us</p>
+                    <a href="mailto:primewaltnigltd@gmail.com" class="quick-link-btn">
+                        Email Us <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="PRIME WALT NIG LTD Logo" class="logo-img">
+                        <div class="logo-text">
+                            <span class="logo-title">PRIME WALT NIG LTD</span>
+                            <span class="logo-subtitle">Excellence in Every Sector</span>
+                        </div>
+                    </a>
+                    <p>Driving sustainable growth through excellence across energy, real estate, mineral resources, renewable energy, and international trade.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Petroleum Supply</a></li>
+                        <li><a href="services.html">Government Contracts</a></li>
+                        <li><a href="services.html">Real Estate</a></li>
+                        <li><a href="services.html">Mining & Resources</a></li>
+                        <li><a href="services.html">International Trade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="mailto:primewaltnigltd@gmail.com">primewaltnigltd@gmail.com</a></li>
+                        <li><a href="tel:+2349013697163">+234 901 369 7163</a></li>
+                        <li><a href="tel:+2348106116814">+234 810 611 6814</a></li>
+                        <li><a href="#">No 61 Maganda Kano, Nigeria</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 PRIME WALT NIG LTD. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
